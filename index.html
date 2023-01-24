@@ -7,12 +7,23 @@
     document.body.style.alignItems = 'center'
     document.body.style.height = '100vh'
     
-    const div = document.createElement('div')
-    div.textContent = 'hello'
-    div.style.color = 'white'
-    div.style.fontSize = '20vw'
-    div.style.fontFamily = 'Futura'
     
+    const months = [
+      'Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 
+      'Nov', 'Dec'
+    ]
+    
+    const d = new Date()
+    const day = d.getDate() //internal objects, reference documentation
+    const m = d.getMonth()
+    const month = months[m]
+    const year = d.getFullYear()
+ 
+    const div = document.createElement('div')
+    div.textContent = month + '. ' + day + ', ' + year
+    div.style.color = 'white'
+    div.style.fontSize = '10vw'
+    div.style.fontFamily = 'Futura'
     document.body.appendChild(div)
   }
   

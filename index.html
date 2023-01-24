@@ -1,0 +1,21 @@
+<script>
+  
+  function onKawara () {
+    document.body.style.backgroundColor = 'black'
+    document.body.style.display = 'grid'
+    document.body.style.justifyContent = 'center'
+    document.body.style.alignItems = 'center'
+    document.body.style.height = '100vh'
+    
+    const div = document.createElement('div')
+    div.textContent = 'hello'
+    div.style.color = 'white'
+    div.style.fontSize = '20vw'
+    div.style.fontFamily = 'Futura'
+    
+    document.body.appendChild(div)
+  }
+  
+  window.addEventListener('load', onKawara)
+  
+</script>
